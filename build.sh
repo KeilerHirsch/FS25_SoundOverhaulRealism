@@ -15,7 +15,7 @@ zip -r "$OUT" \
     modDesc.xml \
     scripts/ \
     sounds/ \
-    icon_soundOverhaulRealism.dds \
+    icon_soundOverhaulRealism.png \
     LICENSE \
     -x "*/.*" "*/.gitkeep"
 

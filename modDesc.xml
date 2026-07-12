@@ -18,7 +18,7 @@ Fundament-Release (0.1.x): die Swap-Engine + Jahreszeiten-Ambience-Scheduler + e
 
 Liefert NUR CC0-/eigenes Audio — niemals gerippte oder "modifizierte" Vanilla-Samples. Mehrspieler-sauber: Audio ist client-seitig, nur Konfiguration/Schalter wird synchronisiert. Vertrieb ueber GitHub.]]></de>
     </description>
-    <iconFilename>icon_soundOverhaulRealism.dds</iconFilename>
+    <iconFilename>icon_soundOverhaulRealism.png</iconFilename>
     <multiplayer supported="true"/>
     <extraSourceFiles>
         <sourceFile filename="scripts/SoundOverhaulRealism.lua"/>

@@ -1,0 +1,15 @@
+# Build artifacts (release zip is attached to GitHub Releases, not committed)
+/FS25_SoundOverhaulRealism.zip
+/dist/
+
+# Tooling caches
+.ruff_cache/
+__pycache__/
+*.pyc
+.luacheckcache
+
+# Editor / OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<!--
+  Starter CC0 sound pack — manifest.
+  This lists the sample layout the engine + ambience modules resolve against.
+  PackLoader registers ONLY files that actually exist on disk, so a sample stays
+  on vanilla until the real CC0 .ogg is dropped in at the path below.
+  Add your own pack by copying this format into sounds/packs/<yourpack>/.
+  RULE: only CC0 / public-domain / own recordings. Never ripped or "modified"
+  vanilla samples. Record every source in CREDITS.md.
+-->
+<soundPack name="starter_cc0" version="0.1.0">
+    <engine>
+        <!-- small inline-4 turbo diesel -->
+        <sample class="i4_td_small" name="motor"      file="engine/i4_small/motor.ogg"/>
+        <sample class="i4_td_small" name="motorStart" file="engine/i4_small/start.ogg"/>
+        <sample class="i4_td_small" name="motorStop"  file="engine/i4_small/stop.ogg"/>
+        <!-- medium inline-6 turbo diesel -->
+        <sample class="i6_td_medium" name="motor"      file="engine/i6_medium/motor.ogg"/>
+        <sample class="i6_td_medium" name="motorStart" file="engine/i6_medium/start.ogg"/>
+        <sample class="i6_td_medium" name="motorStop"  file="engine/i6_medium/stop.ogg"/>
+        <!-- large inline-6 turbo diesel (JD 8R / Fendt 1000 class) -->
+        <sample class="i6_td_large" name="motor"      file="engine/i6_large/motor.ogg"/>
+        <sample class="i6_td_large" name="motorStart" file="engine/i6_large/start.ogg"/>
+        <sample class="i6_td_large" name="motorStop"  file="engine/i6_large/stop.ogg"/>
+        <!-- the selective V8 highlight (Scania-class trucks) -->
+        <sample class="v8_diesel_truck" name="motor"      file="engine/v8_truck/motor.ogg"/>
+        <sample class="v8_diesel_truck" name="motorStart" file="engine/v8_truck/start.ogg"/>
+        <sample class="v8_diesel_truck" name="motorStop"  file="engine/v8_truck/stop.ogg"/>
+    </engine>
+    <!-- Ambience beds are defined in sounds/ambient.xml (loaded via the engine's
+         own loadSampleFromXML). The .ogg files live under this pack's ambient/. -->
+</soundPack>

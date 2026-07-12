@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<!--
+  Ambient bed definitions, loaded via g_soundManager:loadSampleFromXML (the trusted
+  engine path). Each element name is a bed key produced by AmbientSoundModule.selectBed
+  (<season>_day | <season>_night | <season>_rain). file="" is relative to the mod dir.
+  A bed with no (present) .ogg simply never plays — nothing breaks.
+  Radii are large so the 2D-style bed is audible across the map (tune in-game).
+-->
+<sounds>
+    <spring_day   file="sounds/packs/starter_cc0/ambient/spring_day.ogg"   outerRadius="800" innerRadius="800" volume="0.9"/>
+    <summer_day   file="sounds/packs/starter_cc0/ambient/summer_day.ogg"   outerRadius="800" innerRadius="800" volume="0.9"/>
+    <summer_night file="sounds/packs/starter_cc0/ambient/summer_night.ogg" outerRadius="800" innerRadius="800" volume="0.9"/>
+    <autumn_day   file="sounds/packs/starter_cc0/ambient/autumn_day.ogg"   outerRadius="800" innerRadius="800" volume="0.9"/>
+    <winter_day   file="sounds/packs/starter_cc0/ambient/winter_day.ogg"   outerRadius="800" innerRadius="800" volume="0.8"/>
+    <spring_rain  file="sounds/packs/starter_cc0/ambient/rain.ogg"         outerRadius="800" innerRadius="800" volume="0.9"/>
+    <summer_rain  file="sounds/packs/starter_cc0/ambient/rain.ogg"         outerRadius="800" innerRadius="800" volume="0.9"/>
+    <autumn_rain  file="sounds/packs/starter_cc0/ambient/rain.ogg"         outerRadius="800" innerRadius="800" volume="0.9"/>
+    <winter_rain  file="sounds/packs/starter_cc0/ambient/rain.ogg"         outerRadius="800" innerRadius="800" volume="0.9"/>
+</sounds>

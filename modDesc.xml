@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="108">
+    <author>KeilerHirsch</author>
+    <version>0.1.0.0</version>
+    <title>
+        <en>Sound Overhaul Realism</en>
+        <de>Sound Overhaul Realism</de>
+    </title>
+    <description>
+        <en><![CDATA[Sound Overhaul Realism is an original, from-scratch audio framework for Farming Simulator 25. It automatically replaces vanilla vehicle sounds with a realistic, engine-accurate set (correct inline-6 turbo-diesel growl for tractors, a selective Scania V8 highlight — never a fake V8 everywhere), and adds native-feeling seasonal / weather ambience that follows the in-game season, weather and time of day.
+
+Foundation release (0.1.x): the swap engine + seasonal ambience scheduler + a small clean CC0 starter pack. Sound packs are pluggable. Anything not covered falls back to vanilla, transparently.
+
+Ships ONLY CC0 / own audio — never ripped or "modified" vanilla samples. Multiplayer-clean: audio is client-side, only the config/toggle is synced. Distributed on GitHub.]]></en>
+        <de><![CDATA[Sound Overhaul Realism ist ein eigenstaendiges, von Grund auf geschriebenes Audio-Framework fuer Farming Simulator 25. Es ersetzt die Vanilla-Fahrzeugsounds automatisch durch einen realistischen, motorgenauen Satz (korrektes Reihen-6-Turbodiesel-Grollen fuer Traktoren, ein selektives Scania-V8-Highlight — kein Fake-V8 ueberall) und ergaenzt eine nativ wirkende Jahreszeiten-/Wetter-Ambience, die Saison, Wetter und Tageszeit im Spiel folgt.
+
+Fundament-Release (0.1.x): die Swap-Engine + Jahreszeiten-Ambience-Scheduler + ein kleines sauberes CC0-Starter-Pack. Sound-Packs sind einsteckbar. Alles Ungedeckte faellt transparent auf Vanilla zurueck.
+
+Liefert NUR CC0-/eigenes Audio — niemals gerippte oder "modifizierte" Vanilla-Samples. Mehrspieler-sauber: Audio ist client-seitig, nur Konfiguration/Schalter wird synchronisiert. Vertrieb ueber GitHub.]]></de>
+    </description>
+    <iconFilename>icon_soundOverhaulRealism.dds</iconFilename>
+    <multiplayer supported="true"/>
+    <extraSourceFiles>
+        <sourceFile filename="scripts/SoundOverhaulRealism.lua"/>
+    </extraSourceFiles>
+</modDesc>

@@ -1,6 +1,6 @@
 # FS25 Realistic Sound Overhaul — Research & Plan (Source of Truth)
 
-**Status:** RESEARCH + PLANNING (no code yet — Michael-Standard: erst Forschung/Planung)
+**Status:** RESEARCH + PLANNING (no code yet — maintainer-standard: erst Forschung/Planung)
 **Started:** 2026-07-12
 **Project name (LOCKED):** `FS25_SoundOverhaulRealism` — part of the "…Realism" series (sibling to `FS25_IronHorseRealism`)
 **Predecessor context:** IronHorse Realism (v0.2.1.0, done) — same injection philosophy, applied to audio.
@@ -30,7 +30,7 @@ fallback for anything not (yet) covered.
 | D1 | Sample-sourcing strategy (the license showstopper) | **Framework + CC0 starter (Hybrid)** | Code = the real, clean value (GPLv3). Audio ships **only CC0**; sound packs are **pluggable** → sidesteps the "good diesel loops are rare on CC0" problem. Runs out-of-the-box (Apple-KISS). Own recordings can become a premium pack later. |
 | D2 | Replacement mechanism | **Script hook on `SoundManager` (global), NOT built-in `externalSoundsFile`** | `externalSoundsFile` is *gap-filler only* (internal has priority) → useless as an override. The hook is deterministic, global, covers modded vehicles too. |
 | D3 | Injection point | **Overwrite `SoundManager:createAudioSource(sample, filename)`** | Single choke point: every loader (single + plural) funnels here; full context available (`sample.sampleName`, `sample.modifierTargetObject`=vehicle, `sample.audioGroup`). RPM/load pitch modifiers keep working on the swapped file. |
-| D4 | UX | Auto-overhaul as default + a global on/off toggle; per-vehicle shop-config **optional, later** | Matches Michael's "automatically replace" vision; toggle for safety/MP. Shop-config is the market norm (More Motor Sounds) but heavier — defer. |
+| D4 | UX | Auto-overhaul as default + a global on/off toggle; per-vehicle shop-config **optional, later** | Matches the maintainer's "automatically replace" vision; toggle for safety/MP. Shop-config is the market norm (More Motor Sounds) but heavier — defer. |
 | D5 | License (code) | GPLv3 (repo gold-standard default) | Per `reference-keilerhirsch-repo-standard`. |
 
 ---
@@ -114,7 +114,7 @@ from day 1 anyway.
 
 ## 6. Sample-Sourcing (D1 = Hybrid) — legal hygiene rules
 
-**HARD RULE:** ship **only CC0 / public-domain** audio, or Michael's own recordings. **Never** rip or
+**HARD RULE:** ship **only CC0 / public-domain** audio, or the maintainer's own recordings. **Never** rip or
 "modify" GIANTS/vanilla samples (that is a derivative of copyrighted audio — this is exactly what the
 "⭐⭐⭐ modified GIANTS sounds" mods do, and it is *not* clean).
 
@@ -130,7 +130,7 @@ from day 1 anyway.
 **Pack format (design):** a mod-local folder of `.ogg` samples + a manifest mapping
 `sampleName → file` per profile. Community/own packs drop into the same structure.
 
-**Own-recording option (later, premium):** Michael records real vehicles (48kHz, clean loopable
+**Own-recording option (later, premium):** the maintainer records real vehicles (48kHz, clean loopable
 engine loops per RPM band). Best quality + 100% clean + unique. Not blocking for MVP.
 
 ---
@@ -181,7 +181,7 @@ engine loops per RPM band). Best quality + 100% clean + unique. Not blocking for
 
 ## 10. Brainstorm Round 2 (2026-07-12) — scope expansion
 
-**Michael steer:** MP = must-have · truly realistic sound for EVERYTHING · **seasonal/monthly
+**Maintainer steer:** MP = must-have · truly realistic sound for EVERYTHING · **seasonal/monthly
 ambience** ("wie in echt") elevated to a **first-class pillar**, not the last afterthought.
 
 ### 10.1 Name — shortlist (decision open)
@@ -243,7 +243,7 @@ Engine-sound module and seasonal-ambience module are **independent** — can shi
 
 ## 11. Engine-accurate vehicle sound mapping (2026-07-12) — CORE USP
 
-**Michael steer:** juicy V6/V8 + realistic per-vehicle engine sound; **web-research the real engine
+**Maintainer steer:** juicy V6/V8 + realistic per-vehicle engine sound; **web-research the real engine
 behind each FS25 vehicle** to assign the correct sound. **Name locked = `SoundOverhaulRealism` (…Realism series, sibling to IronHorseRealism).
 Distribution = GitHub-only** (freed from ModHub → full pluggable packs allowed).
 
@@ -310,7 +310,7 @@ lookup: find the loader of `ambientSounds.xsd` / `sounds.xml`).
 
 ### 12.2 One-shot build — honest scope & order
 "In einem Rutsch fertig" = the full **code framework + logic + minimal proof audio + tests + repo**, in
-one focused session. The **rich audio content library grows after** (manual CC0 curation + Michael's
+one focused session. The **rich audio content library grows after** (manual CC0 curation + the maintainer's
 in-game ears — audio quality can't be unit-tested; lupa only tests logic).
 
 Build order (one session):
@@ -321,6 +321,6 @@ Build order (one session):
 5. `starter_cc0/` minimal proof set (3 engine classes + 1 V8 + 4 seasonal ambient beds) + `CREDITS.md`.
 6. Settings toggle (modSettings XML).
 7. lupa headless tests (profile mapping, attribute logic) → repo-gold-standard release (GitHub).
-In-game audio tuning = Michael, after.
+In-game audio tuning = the maintainer, after.
 
 **RESEARCH STATUS: COMPLETE. Ready for `/ecc:plan` → build.**

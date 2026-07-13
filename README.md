@@ -1,4 +1,9 @@
-# Sound Overhaul Realism — FS25
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/logo-dark.svg">
+    <img alt="Sound Overhaul Realism — FS25" src="docs/logo-light.svg" width="460">
+  </picture>
+</div>
 
 **A from-scratch audio framework for Farming Simulator 25.** It automatically
 replaces vanilla vehicle sounds with a realistic, **engine-accurate** set, and adds

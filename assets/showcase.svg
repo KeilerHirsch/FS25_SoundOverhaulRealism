@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" role="img" aria-label="Sound Overhaul Realism for FS25: engine-accurate vehicle audio plus seasonal weather ambience, with transparent vanilla fallback">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a"/><stop offset="1" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="amberPanel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2e2411"/><stop offset="1" stop-color="#1b1810"/>
+    </linearGradient>
+    <linearGradient id="skyPanel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0e2436"/><stop offset="1" stop-color="#101a24"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1280" height="640" rx="26" fill="url(#bg)"/>
+
+  <!-- Header -->
+  <text x="64" y="66" fill="#fbbf24" font-size="20" font-weight="700" letter-spacing="3">FS25 · AUDIO FRAMEWORK</text>
+  <text x="64" y="120" fill="#f1f5f9" font-size="44" font-weight="800">Engine-accurate sound <tspan fill="#38bdf8">+ living ambience</tspan></text>
+  <text x="64" y="152" fill="#94a3b8" font-size="19">Replaces vanilla vehicle audio with the correct engine class, and adds season-aware outdoor ambience.</text>
+  <g font-size="14" font-weight="700">
+    <rect x="988" y="52" width="228" height="30" rx="15" fill="#f59e0b" fill-opacity="0.16"/>
+    <text x="1102" y="72" fill="#fbbf24" text-anchor="middle">Foundation release · 0.1.x</text>
+  </g>
+
+  <!-- ENGINE panel -->
+  <rect x="64" y="188" width="512" height="368" rx="18" fill="url(#amberPanel)" stroke="#f59e0b" stroke-opacity="0.45" stroke-width="1.5"/>
+  <rect x="64" y="188" width="512" height="6" rx="3" fill="#f59e0b"/>
+  <text x="92" y="232" fill="#fbbf24" font-size="17" font-weight="700" letter-spacing="2">ENGINE-ACCURATE VEHICLE SOUND</text>
+
+  <g font-size="19" fill="#fde9c7">
+    <circle cx="100" cy="282" r="5" fill="#f59e0b"/><text x="118" y="288">Every vehicle mapped to its real engine class</text>
+    <circle cx="100" cy="326" r="5" fill="#f59e0b"/><text x="118" y="332">Inline-6 turbo-diesel growl — <tspan fill="#fbbf24" font-weight="700">not a fake V8</tspan></text>
+    <circle cx="100" cy="370" r="5" fill="#f59e0b"/><text x="118" y="376">Selective Scania V8 highlight for trucks</text>
+    <circle cx="100" cy="414" r="5" fill="#f59e0b"/><text x="118" y="420">The I6 + turbo whistle is the juicy part</text>
+  </g>
+
+  <g font-size="15" font-weight="600">
+    <rect x="92" y="474" width="150" height="34" rx="17" fill="#f59e0b" fill-opacity="0.14"/>
+    <text x="167" y="496" fill="#fbbf24" text-anchor="middle">no V8-everywhere</text>
+    <rect x="254" y="474" width="168" height="34" rx="17" fill="#f59e0b" fill-opacity="0.14"/>
+    <text x="338" y="496" fill="#fbbf24" text-anchor="middle">per-vehicle mapping</text>
+  </g>
+
+  <!-- AMBIENCE panel -->
+  <rect x="704" y="188" width="512" height="368" rx="18" fill="url(#skyPanel)" stroke="#38bdf8" stroke-opacity="0.5" stroke-width="1.5"/>
+  <rect x="704" y="188" width="512" height="6" rx="3" fill="#38bdf8"/>
+  <text x="732" y="232" fill="#7dd3fc" font-size="17" font-weight="700" letter-spacing="2">SEASONAL / WEATHER AMBIENCE</text>
+
+  <g font-size="19" fill="#dbeffb">
+    <circle cx="740" cy="282" r="5" fill="#38bdf8"/><text x="758" y="288">Scheduler: season × time-of-day × weather</text>
+    <circle cx="740" cy="326" r="5" fill="#38bdf8"/><text x="758" y="332">Plays the right outdoor bed automatically</text>
+    <circle cx="740" cy="370" r="5" fill="#38bdf8"/><text x="758" y="376">Client-side — fully multiplayer-safe</text>
+    <circle cx="740" cy="414" r="5" fill="#38bdf8"/><text x="758" y="420">Transparent vanilla fallback for the rest</text>
+  </g>
+
+  <g font-size="15" font-weight="600">
+    <rect x="732" y="474" width="140" height="34" rx="17" fill="#38bdf8" fill-opacity="0.14"/>
+    <text x="802" y="496" fill="#7dd3fc" text-anchor="middle">MP-safe</text>
+    <rect x="884" y="474" width="196" height="34" rx="17" fill="#38bdf8" fill-opacity="0.14"/>
+    <text x="982" y="496" fill="#7dd3fc" text-anchor="middle">follows the in-game clock</text>
+  </g>
+
+  <!-- Footer -->
+  <rect x="64" y="582" width="1152" height="34" rx="10" fill="#0b1220" stroke="#334155" stroke-width="1"/>
+  <text x="88" y="604" fill="#cbd5e1" font-size="14">
+    <tspan font-weight="700" fill="#4ade80">Foundation:</tspan> from-scratch swap engine + ambience scheduler + pack loader · CC0 starter pack · sibling to Iron Horse Realism · GPLv3
+  </text>
+</svg>

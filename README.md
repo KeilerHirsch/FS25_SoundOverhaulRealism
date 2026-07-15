@@ -5,7 +5,7 @@
   </picture>
 </div>
 
-<p align="center"><img src="assets/showcase.svg" width="900" alt="Engine-accurate vehicle sound plus seasonal weather ambience, with transparent vanilla fallback"/></p>
+<p align="center"><img src="assets/showcase.gif" width="900" alt="Engine-accurate vehicle sound plus seasonal weather ambience, with transparent vanilla fallback"/></p>
 
 **A from-scratch audio framework for Farming Simulator 25.** It automatically
 replaces vanilla vehicle sounds with a realistic, **engine-accurate** set, and adds

@@ -1,68 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" role="img" aria-label="Sound Overhaul Realism for FS25: engine-accurate vehicle audio plus seasonal weather ambience, with transparent vanilla fallback">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0f172a"/><stop offset="1" stop-color="#1e293b"/>
-    </linearGradient>
-    <linearGradient id="amberPanel" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#2e2411"/><stop offset="1" stop-color="#1b1810"/>
-    </linearGradient>
-    <linearGradient id="skyPanel" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#0e2436"/><stop offset="1" stop-color="#101a24"/>
-    </linearGradient>
-  </defs>
-
-  <rect x="0" y="0" width="1280" height="640" rx="26" fill="url(#bg)"/>
-
-  <!-- Header -->
-  <text x="64" y="66" fill="#fbbf24" font-size="20" font-weight="700" letter-spacing="3">FS25 · AUDIO FRAMEWORK</text>
-  <text x="64" y="120" fill="#f1f5f9" font-size="44" font-weight="800">Engine-accurate sound <tspan fill="#38bdf8">+ living ambience</tspan></text>
-  <text x="64" y="152" fill="#94a3b8" font-size="19">Replaces vanilla vehicle audio with the correct engine class, and adds season-aware outdoor ambience.</text>
-  <g font-size="14" font-weight="700">
-    <rect x="988" y="52" width="228" height="30" rx="15" fill="#f59e0b" fill-opacity="0.16"/>
-    <text x="1102" y="72" fill="#fbbf24" text-anchor="middle">Foundation release · 0.1.x</text>
-  </g>
-
-  <!-- ENGINE panel -->
-  <rect x="64" y="188" width="512" height="368" rx="18" fill="url(#amberPanel)" stroke="#f59e0b" stroke-opacity="0.45" stroke-width="1.5"/>
-  <rect x="64" y="188" width="512" height="6" rx="3" fill="#f59e0b"/>
-  <text x="92" y="232" fill="#fbbf24" font-size="17" font-weight="700" letter-spacing="2">ENGINE-ACCURATE VEHICLE SOUND</text>
-
-  <g font-size="19" fill="#fde9c7">
-    <circle cx="100" cy="282" r="5" fill="#f59e0b"/><text x="118" y="288">Every vehicle mapped to its real engine class</text>
-    <circle cx="100" cy="326" r="5" fill="#f59e0b"/><text x="118" y="332">Inline-6 turbo-diesel growl — <tspan fill="#fbbf24" font-weight="700">not a fake V8</tspan></text>
-    <circle cx="100" cy="370" r="5" fill="#f59e0b"/><text x="118" y="376">Selective Scania V8 highlight for trucks</text>
-    <circle cx="100" cy="414" r="5" fill="#f59e0b"/><text x="118" y="420">The I6 + turbo whistle is the juicy part</text>
-  </g>
-
-  <g font-size="15" font-weight="600">
-    <rect x="92" y="474" width="150" height="34" rx="17" fill="#f59e0b" fill-opacity="0.14"/>
-    <text x="167" y="496" fill="#fbbf24" text-anchor="middle">no V8-everywhere</text>
-    <rect x="254" y="474" width="168" height="34" rx="17" fill="#f59e0b" fill-opacity="0.14"/>
-    <text x="338" y="496" fill="#fbbf24" text-anchor="middle">per-vehicle mapping</text>
-  </g>
-
-  <!-- AMBIENCE panel -->
-  <rect x="704" y="188" width="512" height="368" rx="18" fill="url(#skyPanel)" stroke="#38bdf8" stroke-opacity="0.5" stroke-width="1.5"/>
-  <rect x="704" y="188" width="512" height="6" rx="3" fill="#38bdf8"/>
-  <text x="732" y="232" fill="#7dd3fc" font-size="17" font-weight="700" letter-spacing="2">SEASONAL / WEATHER AMBIENCE</text>
-
-  <g font-size="19" fill="#dbeffb">
-    <circle cx="740" cy="282" r="5" fill="#38bdf8"/><text x="758" y="288">Scheduler: season × time-of-day × weather</text>
-    <circle cx="740" cy="326" r="5" fill="#38bdf8"/><text x="758" y="332">Plays the right outdoor bed automatically</text>
-    <circle cx="740" cy="370" r="5" fill="#38bdf8"/><text x="758" y="376">Client-side — fully multiplayer-safe</text>
-    <circle cx="740" cy="414" r="5" fill="#38bdf8"/><text x="758" y="420">Transparent vanilla fallback for the rest</text>
-  </g>
-
-  <g font-size="15" font-weight="600">
-    <rect x="732" y="474" width="140" height="34" rx="17" fill="#38bdf8" fill-opacity="0.14"/>
-    <text x="802" y="496" fill="#7dd3fc" text-anchor="middle">MP-safe</text>
-    <rect x="884" y="474" width="196" height="34" rx="17" fill="#38bdf8" fill-opacity="0.14"/>
-    <text x="982" y="496" fill="#7dd3fc" text-anchor="middle">follows the in-game clock</text>
-  </g>
-
-  <!-- Footer -->
-  <rect x="64" y="582" width="1152" height="34" rx="10" fill="#0b1220" stroke="#334155" stroke-width="1"/>
-  <text x="88" y="604" fill="#cbd5e1" font-size="14">
-    <tspan font-weight="700" fill="#4ade80">Foundation:</tspan> from-scratch swap engine + ambience scheduler + pack loader · CC0 starter pack · sibling to Iron Horse Realism · GPLv3
-  </text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" font-family="'Cascadia Code','JetBrains Mono',Consolas,'Courier New',monospace" role="img" aria-label="gsoc@katana: ~/fs25/sound-overhaul terminal showcase"><defs><clipPath id="win"><rect x="24" y="24" width="1232" height="592" rx="12"/></clipPath></defs><rect x="0" y="0" width="1280" height="640" fill="#010409"/>
+  <rect x="24" y="24" width="1232" height="592" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
+  <g clip-path="url(#win)"><rect x="24" y="24" width="1232" height="46" fill="#161b22"/>
+    <line x1="24" y1="70" x2="1256" y2="70" stroke="#30363d" stroke-width="1"/></g>
+  <circle cx="52" cy="47" r="7" fill="#ff5f56"/><circle cx="76" cy="47" r="7" fill="#febc2e"/>
+  <circle cx="100" cy="47" r="7" fill="#27c93f"/>
+  <text x="640" y="52" fill="#8b949e" font-size="16" text-anchor="middle">gsoc@katana: ~/fs25/sound-overhaul</text>
+  <text x="1236" y="52" fill="#6e7681" font-size="15" text-anchor="end">sound-overhaul v0.1.0</text><text x="56" y="118" font-size="19"><tspan fill="#3fb950">gsoc@katana</tspan><tspan fill="#8b949e">:</tspan><tspan fill="#58a6ff">~/fs25/sound-overhaul</tspan><tspan fill="#8b949e">$ </tspan><tspan fill="#e6edf3">sound-overhaul --load</tspan></text><text x="56" y="164" fill="#c9d1d9" font-size="18">&#9656; engine sound banks</text><rect x="640" y="147" width="110" height="24" rx="5" fill="#238636"/><text x="695.0" y="164" fill="#e6edf3" text-anchor="middle" font-size="14" font-weight="700">remapped</text><text x="56" y="200" fill="#c9d1d9" font-size="18">&#9656; seasonal ambience</text><text x="640" y="200" fill="#39c5cf" font-size="18">spring &#8594; winter</text><text x="56" y="236" fill="#c9d1d9" font-size="18">&#9656; weather layer</text><text x="640" y="236" fill="#39c5cf" font-size="18">rain &#183; wind &#183; storm</text><text x="56" y="272" fill="#c9d1d9" font-size="18">&#9656; missing samples</text><text x="640" y="272" fill="#6e7681" font-size="18">vanilla fallback</text><text x="56" y="322" fill="#8b949e" font-size="15" letter-spacing="1">// the field should sound like the season</text><text x="56" y="384" font-size="34" font-weight="800"><tspan fill="#f85149">vanilla</tspan><tspan fill="#6e7681" font-size="25">  &#9472;&#9472;&#9654;  </tspan><tspan fill="#3fb950">alive</tspan><tspan fill="#8b949e" font-size="18" font-weight="600">  the soundscape</tspan></text><text x="56" y="436" font-size="19"><tspan fill="#3fb950" font-weight="700">&#10003; engine-accurate  &#183;  seasonal  &#183;  transparent fallback</tspan></text><text x="56" y="466" font-size="16" fill="#6e7681">early build (v0.1) &#8212; CC0 / original samples only.</text><text x="56" y="512" font-size="19"><tspan fill="#3fb950">gsoc@katana</tspan><tspan fill="#8b949e">:</tspan><tspan fill="#58a6ff">~/fs25/sound-overhaul</tspan><tspan fill="#8b949e">$ </tspan></text><rect x="470" y="497" width="11" height="20" fill="#3fb950"/><line x1="24" y1="566" x2="1256" y2="566" stroke="#30363d" stroke-width="1"/><text x="56" y="596" font-size="15" fill="#6e7681">GPLv3 &#183; FS25 &#183; audio &#183; vanilla-safe fallback</text><text x="1200" y="596" font-size="15" fill="#d29922" text-anchor="end" letter-spacing="0.5">keilerhirsch</text><rect x="1211" y="582" width="10" height="16" fill="#3fb950"/></svg>
